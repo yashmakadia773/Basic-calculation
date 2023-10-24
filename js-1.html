@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+   
+
+   <script>
+var a = parseInt(prompt("enter the value of A "));
+var b = parseInt(prompt("enter the value of B "));
+
+document.write("value of a  = ", a);
+document.write("<br>value of b = ", b);
+document.write("<br>sum of a and b = ", a + b);
+document.write("<br>substaction of a and b = ", a - b);
+document.write("<br>multiplication of a and b = ", a * b);
+document.write("<br>division of a and b = ", a / b);
+document.write("<br> moduls of a and b = ", a % b);
+
+// 2 
+
+var a = parseInt(prompt("enter the value of a"));
+var b = parseInt(prompt("enter the value of b"));
+
+document.write("before swap<br>");
+document.write("a=" + a + "<br> b = " + b);
+a = a + b;
+b = a - b;
+a = a - b;
+
+// 2nd method
+
+a = a*b/b;
+b = b*a/a;
+
+document.write("<br>after swap<br>");
+document.write("a=" + a + "<br> b = " + b);
+
+// 3
+
+var c = prompt("enter celsius = ");
+var a = c * (9 / 5) + 32;
+
+
+document.write("Celsius to Fahrenheit = ", a);
+
+// 4
+
+var s = parseFloat(prompt("enter the salary = "));
+var hra = 10 / 100 * s
+var da = 5 / 100 * s
+var ta = 8 / 100 * s;
+
+const total = s + hra + da + ta;
+
+console.log(total);
+
+// 5 
+
+var r = prompt("enter radius of circle");
+var pi = 3.14
+a = pi * (r * r);
+
+
+document.write("area of circle is = ", a);
+// 6
+
+var b = prompt("enter base of triangle");
+var h = prompt("enter height of triangle");
+var pi = 3.14
+var a = 0.5 * b * h;;
+document.write("area of triangle is = ", a);
+// 7
+
+var a = parseInt(prompt("enter the amount"));
+var r = parseFloat(prompt("enter rate"));
+var t = parseInt(prompt("enter year"));
+var i;
+
+i = a * r * t / 100;
+
+document.write("<br>your amount = ", a);
+document.write("<br>your interest = ", i);
+document.write("<br>your total amount is =", a + i); 
+</script>
+</body>
+</html>
